@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STACK</title>
+</head>
+<body>
+
+    {% for row in data %}
+        {% if row[1]=='plastic' %}
+            <br>
+        {% endif %}
+        order : {{row[0]}},  type : {{row[1]}},  amount(g) : {{row[2]}},  amount(%) : {{row[3]}}
+        <br>
+    {% endfor %}
+    <a href="/control/checkdata"><button type="submit">BACK</button></a>
+</body>
+</html>
